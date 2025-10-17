@@ -12,7 +12,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/events")
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true") 
 public class EventLoaderController {
 
     @Autowired
