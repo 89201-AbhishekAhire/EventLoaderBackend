@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/status-codes")
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true") 
 public class StatusCodeController {
     @Autowired
     private StatusCodeService statusCodeService;
